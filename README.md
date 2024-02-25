@@ -27,7 +27,8 @@ Otherwise:
 ```python
 python export.py --weights ./ckpt/yolov9-c.pt --simplify --topk-all 100 --iou-thres 0.65 --conf-thres 0.35 --img-size 640 640 --include onnx
 ```
-Link: [yolov9-c.onnx]() and [yolov9-e.onnx]().
+Link: [yolov9-c.onnx(pwd:smus)](https://pan.baidu.com/s/1qQuKyhFsmduaWuBr_02ZQw?pwd=smus) and [yolov9-e.onnx(pwd=pwza)](https://pan.baidu.com/s/1_QRAQEIq4ki8Xdu5M2E7IQ? 
+).
 
 Download onnx model and save weights directory.
 
