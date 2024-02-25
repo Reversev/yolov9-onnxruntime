@@ -2,7 +2,7 @@
 
 Performing Object Detection for YOLOv9 with ONNXRuntime
 
-![! ONNX YOLOv9 Object Detection](https://github.com/danielsyahputra/yolov9-onnx/blob/master/output/sample_image.jpeg)
+![ONNXRUNTIME YOLOv9 Object Detection](https://github.com/Reversev/yolov9-onnxruntime/blob/main/assets/horses.jpg)
 
 
 ## Installation
