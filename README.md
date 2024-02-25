@@ -23,6 +23,13 @@ Use Nvidia GPU:
 Otherwise:
 ```pip install onnxruntime```
 
+### DOWNLOAD Yolov9 ONNX file
+```python
+python export.py --weights ./ckpt/yolov9-c.pt --simplify --topk-all 100 --iou-thres 0.65 --conf-thres 0.35 --img-size 640 640 --include onnx
+```
+Link: [yolov9-c.onnx]() and [yolov9-e.onnx]().
+
+Download onnx model and save weights directory.
 
 ### Inference on Image with CPU/GPU
 
