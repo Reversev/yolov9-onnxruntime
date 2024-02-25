@@ -17,11 +17,11 @@ pip install -r requirements.txt
 
 
 ### ONNX Runtime
-For Nvidia GPU computers:
-`pip install onnxruntime-gpu`
+Use Nvidia GPU:
+```pip install onnxruntime-gpu```
 
 Otherwise:
-`pip install onnxruntime`
+```pip install onnxruntime```
 
 
 ### Inference on Image with CPU/GPU
@@ -30,13 +30,13 @@ Otherwise:
 
 ```python
 pip install onnxruntime
-python main.py --source assets/sample_image.jpeg --weights weights/yolov9-c.onnx --classes weights/metadata.yaml --image
+python main.py --source inference/images/horse.jpg --weights weights/yolov9-c.onnx --classes weights/coco_names.yaml --image
 ```
 
 (2) GPU: need onnxruntime-gpu
 ```python
 pip install onnxruntime-gpu
-python main.py --source assets/sample_image.jpeg --weights weights/yolov9-c.onnx --classes weights/metadata.yaml --image --device cuda
+python main.py --source inference/images/horse.jpg --weights weights/yolov9-c.onnx --classes weights/coco_names.yaml --image --device cuda
 ```
 
 
@@ -45,13 +45,13 @@ python main.py --source assets/sample_image.jpeg --weights weights/yolov9-c.onnx
 (1) CPU: need onnxruntime
 ```
 pip install onnxruntime
-python main.py --source assets/road.mp4 --weights weights/yolov9-c.onnx --classes weights/metadata.yaml --video
+python main.py --source inference/video/demo.mp4 --weights weights/yolov9-c.onnx --classes data/coco_names.yaml --video
 ```
 
 (2) GPU: need onnxruntime-gpu
 ```
 pip install onnxruntime-gpu
-python main.py --source assets/road.mp4 --weights weights/yolov9-c.onnx --classes weights/metadata.yaml --video --device cuda
+python main.py --source inference/video/demo.mp4 --weights weights/yolov9-c.onnx --classes data/coco_names.yaml --video --device cuda
 ```
 
 # References:
